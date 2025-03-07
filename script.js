@@ -27,4 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         heart.offsetHeight; // Trigger reflow
         heart.style.animation = 'pulse 0.5s ease';
     });
+
+    // Pridedame klaviatūros navigacijos palaikymą Roblox mygtukui
+    const robloxButton = document.querySelector('.roblox-button');
+    robloxButton.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            robloxButton.click();
+        }
+    });
 });
