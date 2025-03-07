@@ -125,6 +125,30 @@ h2 {
     font-size: 1.125rem;
 }
 
+.roblox-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(221, 36, 118, 0.2);
+}
+
+.roblox-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(221, 36, 118, 0.3);
+}
+
+.roblox-button:active {
+    transform: translateY(0);
+}
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
